@@ -24,7 +24,7 @@ const Navbar = () => {
 
                 {/* navbar er link */}
                 <ul className="hidden md:flex gap-8 items-center text-lg">
-                    <li><NavLink to="/">
+                    <li><NavLink className={'hover:text-orange-500'} to="/">
                         Home
                     </NavLink></li>
                     <li><a href="about" className="hover:text-orange-500"><Link to="about" smooth={true} duration={500}>

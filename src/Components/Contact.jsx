@@ -51,11 +51,11 @@ const Contact = () => {
     return (
         <section id="contact" className="bg-[#0d1117] text-white py-20 px-[10%]">
             <motion.div
-                variants={fadeIn('up', 0.1)}
+                variants={fadeIn('down', 0.1)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.7 }}
-                className="max-w-6xl mx-auto">
+                className="max-w-7xl mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold text-orange-500 text-center mb-12">
                     Contact Me
                 </h2>
@@ -67,7 +67,7 @@ const Contact = () => {
                             <FaEnvelope className="text-orange-400 text-3xl" size={25} />
                             <div>
                                 <p className="text-sm text-gray-400">Email</p>
-                                <p className="text-lg font-medium text-white">
+                                <p className="font-medium text-white">
                                     mustakim.dev01@gmail.com
                                 </p>
                             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                             <FaPhone className="text-orange-400 text-3xl" size={25} />
                             <div>
                                 <p className="text-sm text-gray-400">Phone</p>
-                                <p className="text-lg font-medium text-white">
+                                <p className="font-medium text-white">
                                     +880 1234-567890
                                 </p>
                             </div>

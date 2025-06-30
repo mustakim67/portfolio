@@ -26,13 +26,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id="project" className="bg-[#161b22] text-white py-40 px-[10%]">
-            <motion.div
-             variants={fadeIn('up', 0.1)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{ once: false, amount: 0.7 }}
-            >
+        <section id="project" className="bg-[#161b22] text-white py-10 md:py-35 px-[10%]">
   <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold text-orange-500">
                     Projects
@@ -65,7 +59,6 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-            </motion.div>
           
         </section>
     );

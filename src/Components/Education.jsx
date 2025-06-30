@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Education = () => {
     return (
-        <section id="education" className="bg-[#0d1117] text-white px-[10%] md:pb-40 pb-20 pt-10">
+        <section id="education" className="bg-[#0d1117] text-white px-[10%] md:pb-40 pb-20 md:pt-10">
             <motion.div
                 variants={fadeIn('up', 0.1)}
                 initial='hidden'

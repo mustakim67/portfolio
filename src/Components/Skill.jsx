@@ -38,16 +38,17 @@ const skillCategories = [
 const Skills = () => {
     return (
         <section id="skill" className="bg-[#0d1117] text-white py-10 md:py-40 px-[10%]">
-            <div className="mx-auto">
+            <motion.div
+                variants={fadeIn('down', 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className="mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-500 mb-14">
                     My Skills
                 </h2>
 
-                <motion.div
-                    variants={fadeIn('up', 0.1)}
-                    initial='hidden'
-                    whileInView={'show'}
-                    viewport={{ once: false, amount: 0.7 }}
+                <div
                     className="grid md:grid-cols-3 gap-10">
                     {skillCategories.map((category, idx) => (
                         <div
@@ -73,8 +74,8 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
+                </div>
             </motion.div>
-        </div>
         </section >
     );
 };

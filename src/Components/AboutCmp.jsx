@@ -21,7 +21,7 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Left*/}
                     <motion.div
-                        variants={fadeIn('right', 0.1)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
@@ -40,7 +40,7 @@ const About = () => {
 
                     {/* Right */}
                     <motion.div
-                        variants={fadeIn('left', 0.1)}
+                        variants={fadeIn('up', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.7 }}
