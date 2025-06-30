@@ -20,7 +20,7 @@ const CareForce = () => {
             "Framer Motion"
         ],
         live: "https://careforce-20259.web.app",
-        github: "https://github.com/your-careforce-repo",
+        github: "https://github.com/mustakim67/CareForce-Client",
         image: "https://i.ibb.co/1tkLvfGm/careforce.png",
         challenges: [
             "Ensuring real-time updates for volunteer request status",

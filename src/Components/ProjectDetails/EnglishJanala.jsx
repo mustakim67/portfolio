@@ -13,7 +13,7 @@ const EnglishJanala = () => {
         ],
         tech: ["JavaScript", "HTML", "CSS", "SpeechSynthesis API"],
         live: "https://engjanala.netlify.app",
-        github: "https://github.com/your-englishjanala-repo",
+        github: "https://github.com/mustakim67/English-Janala",
         image: "https://i.ibb.co/SD5Z7mzz/english.png",
         challenges: [
             "Working with the SpeechSynthesis API for smooth pronunciation",
