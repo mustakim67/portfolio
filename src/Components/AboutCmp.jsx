@@ -7,7 +7,7 @@ const About = () => {
         <section id="about" className="px-[10%] py-20 md:py-40">
             <div className="mx-auto space-y-12">
                 <motion.div
-                    variants={fadeIn('left', 0.1)}
+                    variants={fadeIn('up', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{ once: false, amount: 0.7 }}

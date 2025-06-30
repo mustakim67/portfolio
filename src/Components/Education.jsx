@@ -1,9 +1,16 @@
 import React from "react";
+import { fadeIn } from "./variant";
+import { motion } from 'framer-motion';
 
 const Education = () => {
     return (
         <section id="education" className="bg-[#0d1117] text-white px-[10%] md:pb-40 pb-20 pt-10">
-            <div className="mx-auto">
+            <motion.div
+                variants={fadeIn('up', 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className="mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-500 mb-14">
                     Educational Qualification
                 </h2>
@@ -28,7 +35,7 @@ const Education = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };

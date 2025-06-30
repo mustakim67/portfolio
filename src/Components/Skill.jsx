@@ -1,17 +1,7 @@
-import {
-    FaReact,
-    FaNodeJs,
-    FaGithub,
-    FaFigma,
-    FaHtml5,
-    FaCss3Alt,
-} from "react-icons/fa";
-import {
-    SiTailwindcss,
-    SiMongodb,
-    SiExpress,
-    SiJavascript,
-} from "react-icons/si";
+import { FaReact, FaNodeJs, FaGithub, FaFigma, FaHtml5, FaCss3Alt, } from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiExpress, SiJavascript, } from "react-icons/si";
+import { motion } from 'framer-motion'
+import { fadeIn } from "./variant";
 
 const skillCategories = [
     {
@@ -53,7 +43,12 @@ const Skills = () => {
                     My Skills
                 </h2>
 
-                <div className="grid md:grid-cols-3 gap-10">
+                <motion.div
+                    variants={fadeIn('up', 0.1)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="grid md:grid-cols-3 gap-10">
                     {skillCategories.map((category, idx) => (
                         <div
                             key={idx}
@@ -78,9 +73,9 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-            </div>
-        </section>
+            </motion.div>
+        </div>
+        </section >
     );
 };
 

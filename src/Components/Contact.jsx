@@ -3,6 +3,8 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import 'sweetalert2/dist/sweetalert2.min.css';
+import { fadeIn } from "./variant";
+import {motion} from 'framer-motion';
 
 const Contact = () => {
     const formRef = useRef();
@@ -21,10 +23,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                "service_ala2i16",      
-                "template_h745ep3",      
-                formRef.current,        
-                "FCTrb40E4wz1ZrjWv"       
+                "service_ala2i16",
+                "template_h745ep3",
+                formRef.current,
+                "FCTrb40E4wz1ZrjWv"
             )
             .then(() => {
                 Swal.fire({
@@ -48,8 +50,13 @@ const Contact = () => {
 
     return (
         <section id="contact" className="bg-[#0d1117] text-white py-20 px-[10%]">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-orange-500 text-center mb-12">
+            <motion.div
+                variants={fadeIn('up', 0.1)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{ once: false, amount: 0.7 }}
+                className="max-w-6xl mx-auto">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-500 text-center mb-12">
                     Contact Me
                 </h2>
 
@@ -67,7 +74,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex items-center gap-4 bg-[#0d1117] p-5 rounded-xl border border-gray-700 shadow-md">
-                            <FaPhone className="text-orange-400 text-3xl" size={25}/>
+                            <FaPhone className="text-orange-400 text-3xl" size={25} />
                             <div>
                                 <p className="text-sm text-gray-400">Phone</p>
                                 <p className="text-lg font-medium text-white">
@@ -123,7 +130,7 @@ const Contact = () => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };
