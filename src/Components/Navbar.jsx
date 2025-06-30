@@ -17,23 +17,26 @@ const Navbar = () => {
         transition-all duration-300
       ">
                 <h1 className="text-2xl md:text-3xl font-bold">
-                    <Link to="/">
-                        <span className="text-orange-500">MD_</span>MUSTAKIM
-                    </Link>
+                    <NavLink to="/">
+                        <span className="text-orange-500 cursor-pointer">MD_</span>MUSTAKIM
+                    </NavLink>
                 </h1>
 
                 {/* navbar er link */}
                 <ul className="hidden md:flex gap-8 items-center text-lg">
+                    <li><NavLink to="/">
+                        Home
+                    </NavLink></li>
                     <li><a href="about" className="hover:text-orange-500"><Link to="about" smooth={true} duration={500}>
                         About
                     </Link></a></li>
-                    <li><a href="about" className="hover:text-orange-500"><Link to="skill" smooth={true} duration={500}>
+                    <li><a href="skill" className="hover:text-orange-500"><Link to="skill" smooth={true} duration={500}>
                         Skills
                     </Link></a></li>
-                    <li><a href="about" className="hover:text-orange-500"><Link to="education" smooth={true} duration={500}>
+                    <li><a href="education" className="hover:text-orange-500"><Link to="education" smooth={true} duration={500}>
                         Education
                     </Link></a></li>
-                    <li><a href="about" className="hover:text-orange-500"><Link to="project" smooth={true} duration={500}>
+                    <li><a href="project" className="hover:text-orange-500"><Link to="project" smooth={true} duration={500}>
                         Projects
                     </Link></a></li>
                 </ul>
@@ -60,16 +63,19 @@ const Navbar = () => {
           transition-all duration-300
         ">
                     <ul className="flex flex-col gap-4 text-lg">
+                        <li><a className="hover:text-orange-500"><NavLink to="/" smooth={true} duration={500}>
+                        Home
+                    </NavLink></a></li>
                         <li><a href="about" className="hover:text-orange-500"><Link to="about" smooth={true} duration={500}>
                             About
                         </Link></a></li>
-                        <li><a href="about" className="hover:text-orange-500"><Link to="skill" smooth={true} duration={500}>
+                        <li><a href="skill" className="hover:text-orange-500"><Link to="skill" smooth={true} duration={500}>
                             Skills
                         </Link></a></li>
-                        <li><a href="about" className="hover:text-orange-500"><Link to="education" smooth={true} duration={500}>
+                        <li><a href="education" className="hover:text-orange-500"><Link to="education" smooth={true} duration={500}>
                             Education
                         </Link></a></li>
-                        <li><a href="about" className="hover:text-orange-500"><Link to="project" smooth={true} duration={500}>
+                        <li><a href="project" className="hover:text-orange-500"><Link to="project" smooth={true} duration={500}>
                             Projects
                         </Link></a></li>
                     </ul>

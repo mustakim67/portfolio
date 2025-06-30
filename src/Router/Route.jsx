@@ -6,6 +6,9 @@ import {
 import Home from '../Layouts/Home';
 import Root from '../Root/Root';
 import About from '../Components/AboutCmp';
+import HobbyHub from '../Components/ProjectDetails/HobbyHub';
+import CareForce from '../Components/ProjectDetails/CareForce';
+import EnglishJanala from '../Components/ProjectDetails/EnglishJanala';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +18,18 @@ const router = createBrowserRouter([
         {
             index:true,
             Component:Home
+        },
+        {
+          path:'projects/hobby-hub',
+          Component:HobbyHub
+        },
+        {
+          path:'projects/care-force',
+          Component:CareForce
+        },
+        {
+          path:'projects/english-janala',
+          Component:EnglishJanala
         }
     ]
   },

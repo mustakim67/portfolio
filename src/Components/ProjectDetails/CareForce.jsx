@@ -1,30 +1,37 @@
 import React from 'react';
 
-const HobbyHub = () => {
+const CareForce = () => {
     const project = {
-        name: "HobbyHub",
+        name: "CareForce",
         description:
-            "HobbyHub is a platform where people can discover and join local hobby-based groups or create their own. It encourages social engagement through shared interests, helping people build communities around their passions.",
+            "A web application designed to connect volunteers with community initiatives. Users can view, request, and participate in meaningful social projects.",
         features: [
-            "Interactive UI with Lottie animations & typewriter effects",
-            "Group join by hobby",
-            "Toast & Alert system",
-            "Responsive Carousels",
+            "Volunteer Request & Post System",
+            "Post Management (CRUD)",
+            "MongoDB Integration",
+            "Real-time Notifications"
         ],
-        tech: ["React", "Firebase", "Node JS", "Vite", "MongoDB"],
-        live: "https://hobby-hub-fc4c7.web.app",
-        github: "https://github.com/mustakim67/HobbyHub",
-        image: "https://i.ibb.co/vxr4SvMp/hobby.png",
+        tech: [
+            "React",
+            "Firebase",
+            "Node JS",
+            "Vite",
+            "MongoDB",
+            "Framer Motion"
+        ],
+        live: "https://careforce-20259.web.app",
+        github: "https://github.com/your-careforce-repo",
+        image: "https://i.ibb.co/1tkLvfGm/careforce.png",
         challenges: [
-            "Integrating Firebase Auth securely and managing user state across pages",
-            "Implementing responsive design for various screen sizes",
-            "Efficient group filtering and search based on user hobbies",
+            "Ensuring real-time updates for volunteer request status",
+            "Structuring secure user authentication and role-based access",
+            "Maintaining performance during heavy CRUD operations"
         ],
         futurePlans: [
-            "Add real-time group chat using Firebase Realtime Database",
-            "Enable location-based hobby suggestions",
-            "Introduce admin dashboard for managing group activities",
-        ],
+            "Add location-based project filtering",
+            "Introduce badges for volunteer achievements",
+            "Create a dashboard for NGO admins"
+        ]
     };
 
     return (
@@ -107,4 +114,4 @@ const HobbyHub = () => {
     );
 };
 
-export default HobbyHub;
+export default CareForce;

@@ -1,30 +1,30 @@
 import React from 'react';
 
-const HobbyHub = () => {
+const EnglishJanala = () => {
     const project = {
-        name: "HobbyHub",
+        name: "English Janala",
         description:
-            "HobbyHub is a platform where people can discover and join local hobby-based groups or create their own. It encourages social engagement through shared interests, helping people build communities around their passions.",
+            "A simple yet effective JavaScript-based learning app where users can log in and access card-based English lessons with voice pronunciation.",
         features: [
-            "Interactive UI with Lottie animations & typewriter effects",
-            "Group join by hobby",
-            "Toast & Alert system",
-            "Responsive Carousels",
+            "JavaScript-only app",
+            "Voice pronunciation",
+            "Card-based lessons",
+            "Simple login feature"
         ],
-        tech: ["React", "Firebase", "Node JS", "Vite", "MongoDB"],
-        live: "https://hobby-hub-fc4c7.web.app",
-        github: "https://github.com/mustakim67/HobbyHub",
-        image: "https://i.ibb.co/vxr4SvMp/hobby.png",
+        tech: ["JavaScript", "HTML", "CSS", "SpeechSynthesis API"],
+        live: "https://engjanala.netlify.app",
+        github: "https://github.com/your-englishjanala-repo",
+        image: "https://i.ibb.co/SD5Z7mzz/english.png",
         challenges: [
-            "Integrating Firebase Auth securely and managing user state across pages",
-            "Implementing responsive design for various screen sizes",
-            "Efficient group filtering and search based on user hobbies",
+            "Working with the SpeechSynthesis API for smooth pronunciation",
+            "Building a responsive card-based UI without frameworks",
+            "Maintaining lesson state without complex state managers"
         ],
         futurePlans: [
-            "Add real-time group chat using Firebase Realtime Database",
-            "Enable location-based hobby suggestions",
-            "Introduce admin dashboard for managing group activities",
-        ],
+            "Add progress tracking and quiz modules",
+            "Include more lesson categories (Grammar, Vocabulary, Listening)",
+            "Improve accessibility and voice control"
+        ]
     };
 
     return (
@@ -43,6 +43,7 @@ const HobbyHub = () => {
                     <p className="text-gray-300">{project.description}</p>
                 </div>
 
+
                 <div>
                     <h3 className="text-2xl font-semibold text-orange-400 mb-2">Technology Stack</h3>
                     <div className="flex flex-wrap gap-3">
@@ -57,6 +58,7 @@ const HobbyHub = () => {
                     </div>
                 </div>
 
+
                 <div>
                     <h3 className="text-2xl font-semibold text-orange-400 mb-2">Key Features</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-1">
@@ -65,6 +67,7 @@ const HobbyHub = () => {
                         ))}
                     </ul>
                 </div>
+
 
                 <div className="flex flex-wrap gap-4">
                     <a
@@ -107,4 +110,4 @@ const HobbyHub = () => {
     );
 };
 
-export default HobbyHub;
+export default EnglishJanala;
